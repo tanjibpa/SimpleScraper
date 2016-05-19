@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>Reddit Scraper</title>
+	</head>
+	<body>
+		{% if latest_item_list %}
+			<ul>
+				{% for item in latest_item_list %}
+					<li><a href="/scrapeapp/{{ item.id }}/">{{ item.title_text }}</a></li>
+				{% endfor %}
+			</ul>
+		{% else %}
+			<p>No items are available.</p>
+		{% endif %}
+	</body>
+</html>
