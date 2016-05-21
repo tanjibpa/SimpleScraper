@@ -4,7 +4,7 @@ from scrapy.selector import Selector
 # from scrapy.linkextractors import LinkExtractor
 from scrapy.loader import ItemLoader
 from scrapy.loader.processors import MapCompose, Join
-from thescraper.items import ThescraperItem
+from thescraper.thescraper.items import ThescraperItem
 
 
 class RPythonSpider(CrawlSpider):
