@@ -26,6 +26,11 @@ NEWSPIDER_MODULE = 'thescraper.spiders'
 ITEM_PIPELINES = {
 	'thescraper.thescraper.pipelines.ThescraperPipeline': 0
 }
+# TO crawl from scrapy (thescraper) directory 
+# ITEM_PIPELINES = {
+# 	'thescraper.pipelines.ThescraperPipeline': 0
+# }
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'thescraper (+http://www.yourdomain.com)'
 
